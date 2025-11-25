@@ -34,11 +34,13 @@ function App() {
         setColor("");
         fetchItems();
       })
+      .catch(console.error);
       
   };
 
   const deleteItem = (item_id) => {
-    fetch(`http://127.0.0.1:8000/items/${item_id}`, { method: "DELETE" })
+    fetch(`http://127.0.0.1:8000/items/${item_id}`, 
+      { method: "DELETE" })
       .then(() => fetchItems())
       .catch(console.error);
   };
