@@ -56,7 +56,7 @@ async def create_item(item : Item, db : Session = Depends(get_db)):
     return item
 
 @app.put("/items/{item_id}")
-async def update_item(item_id: int, item: ItemUpdate, db: Session = Depends(get_db)) :
+async def update_item(item_id: int, item: ItemUpdate, db: Session = Depends(get_db)):
     itemino = db.query(Items).filter(Items.id == item_id).first()
 
     if not itemino:

@@ -9,6 +9,6 @@ class Items(BaseDb):
 
     name: Mapped[str] = mapped_column(String(100), nullable=False)
 
-    color: Mapped[str | None] = mapped_column(String(500), nullable=True)
-
     price: Mapped[float] = mapped_column(Float, nullable= False)
+
+    color: Mapped[str | None] = mapped_column(String(500), nullable=True)
