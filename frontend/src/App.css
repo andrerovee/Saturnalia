@@ -1,0 +1,77 @@
+/* Contenitore principale */
+.App {
+  max-width: 400px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Titolo centrale */
+.App h1 {
+  text-align: center;
+  color: #1a237e; /* blu scuro */
+}
+
+/* Form di inserimento */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #90caf9; /* blu chiaro */
+  flex: 1;
+}
+
+.input-container input[type="number"] {
+  width: 80px;
+}
+
+.input-container button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1976d2; /* blu principale */
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-container button:hover {
+  background-color: #1565c0; /* blu scuro hover */
+}
+
+/* Lista items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #bbdefb; /* blu molto chiaro */
+  align-items: center;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background-color: #e3f2fd; /* leggero blu hover */
+}
+
+li button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #2196f3; /* blu brillante */
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li button:hover {
+  background-color: #1565c0; /* blu scuro */
+}
